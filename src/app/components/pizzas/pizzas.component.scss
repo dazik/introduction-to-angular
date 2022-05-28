@@ -1,0 +1,9 @@
+.pizzas-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+
+  app-pizza-card {
+    margin: 10px;
+  }
+}
