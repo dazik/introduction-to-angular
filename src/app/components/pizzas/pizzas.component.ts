@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { pizzasList } from "../../mock-data/pizzas-list";
 
 @Component({
   selector: 'app-pizzas',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pizzas.component.scss']
 })
 export class PizzasComponent implements OnInit {
+  public pizzas = pizzasList;
+
   constructor() { }
 
   ngOnInit(): void {

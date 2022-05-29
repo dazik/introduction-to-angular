@@ -1,19 +1,19 @@
 <div class="card">
   <div class="card__img">
-    <img src="../../../../assets/images/image_part_001.jpg" alt="">
+    <img [src]="'../../../../assets/images/'+pizza.image" alt="">
   </div>
   <div class="card__body">
     <div class="card__title">
-      Пеперони
+      {{ pizza.name }}
     </div>
     <div class="card__description">
-      Салями, томаты и великолепный сыр на подложке из тончайшего теста
+      {{ pizza.description }}
     </div>
     <div class="card__price">
-      99 000 сум
+      {{ pizza.price }} сум
     </div>
     <div class="card__controls">
-      <button>Добавить в корзину</button>
+      <button (click)="add()">Добавить в корзину</button>
     </div>
   </div>
 </div>

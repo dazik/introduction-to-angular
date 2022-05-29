@@ -1,8 +1,6 @@
-<h3>Ваша корзина пуста</h3>
 <h3>Вы заказали:</h3>
 <ul>
-  <li>Пеперони х2</li>
-  <li>Гавайская х1</li>
-  <li>Маргарита х3</li>
+  <li *ngFor="let item of cart">
+    {{ item.name}} x{{item.quantity}} - {{ item.price}}
+  </li>
 </ul>
-<p>Общая цена: 279000</p>
